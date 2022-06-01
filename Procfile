@@ -1,1 +1,1 @@
-web: node server --bind :8080
+web: node server
