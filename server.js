@@ -3,7 +3,7 @@ const http = require("http");
 
 const port = 3000;
 
-app.set("port", ":" + os.Getenv("PORT") || port);
+app.set("port", process.env.PORT || port);
 
 const server = http.createServer(app);
 
