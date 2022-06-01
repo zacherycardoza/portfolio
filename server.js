@@ -7,5 +7,5 @@ app.set("port", process.env.PORT || port);
 
 const server = http.createServer(app);
 
-server.listen(port);
-server.on("listening", () => console.log(`listening on port ${port}`));
+server.listen(process.env.PORT || port);
+server.on("listening", () => console.log(`listening on port ${process.env.PORT || port}`));
